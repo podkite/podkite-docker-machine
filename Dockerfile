@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add curl && apk add bash
+RUN apk add --no-cache curl && apk add --no-cache bash && apk add --no-cache git
 
 RUN curl -sL https://sentry.io/get-cli/ | bash
 
